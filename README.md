@@ -1,4 +1,4 @@
-## Redux Toolkit
+# Redux Toolkit
 
 redux is a state management library, which simplifies state management in an application and helps to overcome prop drilling.
 
@@ -10,7 +10,7 @@ in a bigger application that can be hanutingly bad. redux basically solve that.
 
 - react also provides hooks like useContext and useReducer for better state management. But Redux is a bit more robust and scalable.
 
-# How Redux Toolkit solves the problem of Prop Drilling --
+## How Redux Toolkit solves the problem of Prop Drilling --
 
 Redux toolkit(same useContext) says, single source of truth. And to achieve that It creates a container/store outside of the application, and all the data will be available in that store.
 
@@ -26,7 +26,7 @@ Now any componenet at any level can ask for the necessary data.
 
 4. useDispatch - This hook calls the necessary action from the reducer. based on some events like button click, change some action gets dispatched. Now the reducer will do the task based on that action call.
 
-# Slice -
+## Slice -
 
 To put it simply, slice can be described as a major feature of an object. For example, You are creating a todo project, which has 3 major features, authentication, handling todo features, merging your todos with google calender.
 
