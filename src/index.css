@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(32, 32, 32);
+  color: whitesmoke;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  margin: 3rem auto;
+  letter-spacing: 2px;
+}
+
+.addTodo-section {
+  margin-bottom: 0.5rem;
+}
+
+.form input {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  outline: none;
+  border: none;
+  background-color: rgb(117, 128, 140);
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  color: black;
+  border-radius: 5px;
+}
+
+.form input::placeholder {
+  color: rgb(30, 30, 30);
+}
+
+.add-btn {
+  margin-left: 0.5rem;
+  border: none;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  color: whitesmoke;
+  background-color: darkorchid;
+  padding: 0.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 100;
+  cursor: pointer;
+  user-select: none;
+}
+
+.todos-section {
+  min-width: 340px;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.todo {
+  display: flex;
+  background-color: rgb(18, 18, 18);
+  align-items: center;
+  padding: 0.1rem 0.5rem;
+  gap: 8px;
+  border-radius: 5px;
+}
+
+.todo-content {
+  margin-right: auto;
+  background-color: rgba(50, 50, 50, 0.488);
+  padding: 0.5rem 1rem;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  /* text-decoration: line-through; */
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+.btn-container {
+  font-size: 1.4rem;
+  gap: 0.8rem;
+  display: flex;
+}
+
+.btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  border: none;
+  padding: 0.2rem 0.3rem;
+  border-radius: 2px;
+}
+
+.btn svg {
+  color: whitesmoke;
+}
+
+.del-btn {
+  background-color: rgb(188, 34, 34);
+  transition: ease-in 200ms;
+}
+
+/* .del-btn:hover {
+  filter: drop-shadow(0 0 4px rgba(236, 69, 69, 0.593));
+} */
+
+.edit-btn {
+  background-color: rgb(20, 193, 20);
+  transition: ease-in 200ms;
+}
+
+/* .edit-btn:hover {
+  filter: drop-shadow(0 0 4px rgba(69, 236, 80, 0.593));
+} */
+
+.disabled {
+  cursor: not-allowed;
+  filter: brightness(50%);
+}
